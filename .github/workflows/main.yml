@@ -15,7 +15,7 @@ jobs:
 
       # 2️⃣ Build backend Docker image
       - name: Build Backend Docker Image
-        run: docker build -t alclinic-backend -f Dockerfile .
+        run: docker build -t alclinic-backend -f DockerFile .
 
       # 3️⃣ Setup SSH
       - name: Setup SSH

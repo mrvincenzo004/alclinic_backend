@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  alclinic-backend:
+    image: alclinic-backend:latest
+    container_name: alclinic-backend
+    build:
+      context: .
+      dockerfile: DockerFile
+    ports:
+      - "4040:4040"
+    networks:
+      - alclinic-net
+
+networks:
+  alclinic-net:
+    driver: bridge
